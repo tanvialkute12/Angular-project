@@ -1,0 +1,29 @@
+<form [formGroup]="loginForm">
+    <p-card header="Title"[style]="{width: '360px'}">
+        <p class="m-0">
+            <div class="field">
+                <label for="email">Email</label>
+                <input type="text" pInputText
+                 formControlName="email" 
+                 class="w-full"
+                 name="email" 
+                 placeholder="Type your email"/>
+
+            </div>
+            <div class="field">
+                <label for="password">Password</label>
+                <input type="password" pInputText
+                 formControlName="password" 
+                 class="w-full"
+                 name="password" 
+                 placeholder="Type your password"/>
+
+            </div>
+            <p-button label="SIGN IN" styleClass="w-full"></p-button>
+            <div class="mt-2">
+                Not a member? <a routerLink="/register">Register</a>
+            </div>
+
+        </p>
+    </p-card>
+</form>
